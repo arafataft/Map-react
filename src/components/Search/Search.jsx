@@ -1,7 +1,7 @@
 import Paper from "@mui/material/Paper";
 import { useState } from "react";
 import './Search.css'
-import { SearchRounded } from "@mui/icons-material";
+import { CloseSharp, SearchRounded } from "@mui/icons-material";
 
 // eslint-disable-next-line react/prop-types
 const Search = ({ extractLocation }) => {
@@ -70,7 +70,8 @@ const Search = ({ extractLocation }) => {
           )}
           {!iconToggle && (
             <div className="close-icon">
-              <i className="fas fa-times" onClick={handleClose}></i>
+              <CloseSharp onClick={handleClose}/>
+              
             </div>
           )}
         </div>
@@ -104,7 +105,7 @@ const Search = ({ extractLocation }) => {
 
       {/* Show Details of the Selected Result */}
       {placeId && (
-        <Paper maxWidth="sm" elevation={0} className="details">
+        <Paper elevation={0} className="details">
           <h3>{select.address}</h3>
           <h4>
             {select.address}, {select.area}, {select.city}

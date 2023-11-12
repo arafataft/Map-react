@@ -1,0 +1,114 @@
+.search {
+  width: 43vw;
+  height: 100vh;
+  padding: 0 20px;
+}
+.search h2 {
+  padding-top: 15px;
+  padding-bottom: 40px;
+}
+.search .title {
+  color: rgb(46, 228, 152);
+}
+.search .paper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search .search-box {
+  width: 85%;
+}
+.search .search-box input {
+  width: 94%;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 15px 10px;
+  background: white;
+  color: black;
+}
+.search .icon-box {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+.search .icon-box .search-icon {
+  width: 50px;
+  height: 30px;
+  font-size: 15px;
+  color: black;
+  background: linear-gradient(to right, rgb(43, 177, 121), rgb(46, 228, 152));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.search .icon-box .close-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+.search .results ul li {
+  display: flex;
+}
+.search .results ul li:hover {
+  cursor: pointer;
+  background: rgb(243, 240, 240);
+}
+.search .loc-pin {
+  font-size: 25px;
+  padding: 0 10px;
+}
+.search .address {
+  padding: 10px 5px;
+}
+.search .address h3 {
+  font-weight: 400;
+}
+.search .address p {
+  font-size: 15px;
+  padding: 5px 0;
+}
+.search .address button {
+  padding: 3px 5px;
+  font-size: 12px;
+  border: none;
+}
+.search .details {
+  padding: 60px 30px 30px 30px;
+  margin-top: 20px;
+}
+.search .details h3 {
+  font-size: 30px;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+.search .details h4 {
+  font-size: 19px;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+.search .details p {
+  padding-bottom: 10px;
+}
+.search .details .explore {
+  padding-top: 50px;
+  width: 300px;
+}
+.search .details .explore h5 {
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+.search .details .explore button {
+  padding: 8px 10px;
+  margin: 5px;
+  font-size: 14px;
+  background: white;
+  color: rgb(18, 18, 131);
+  border: 1px solid rgb(214, 214, 214);
+  border-radius: 4px;
+}
+.search .details .explore button:hover {
+  cursor: pointer;
+  background: rgb(214, 214, 214);
+}

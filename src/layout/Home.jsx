@@ -35,9 +35,9 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
                     easing: theme.transitions.easing.sharp,
                     duration: theme.transitions.duration.leavingScreen,
                 }),
-                width: theme.spacing(7),
+                width: theme.spacing(5),
                 [theme.breakpoints.up('sm')]: {
-                    width: theme.spacing(9),
+                    width: theme.spacing(5),
                 },
             }),
         },
@@ -95,7 +95,7 @@ export default function Home() {
                     overflow: 'auto',
                 }}
             >
-                <Container maxWidth="lg" sx={{ }}>
+                <Container sx={{ }}>
                 <Maps place={place} />
                 </Container>
             </Box>
