@@ -112,3 +112,9 @@
   cursor: pointer;
   background: rgb(214, 214, 214);
 }
+
+
+.search.dark-mode {
+  background-color: black;
+  color: white;
+}

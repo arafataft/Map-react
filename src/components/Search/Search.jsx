@@ -4,7 +4,7 @@ import './Search.css'
 import { CloseSharp, SearchRounded } from "@mui/icons-material";
 
 // eslint-disable-next-line react/prop-types
-const Search = ({ extractLocation }) => {
+const Search = ({ extractLocation, darkMode }) => {
   const [query, setQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [iconToggle, setIconToggle] = useState(true);
@@ -46,7 +46,7 @@ const Search = ({ extractLocation }) => {
   };
 
   return (
-    <div className="search">
+    <div className={`search ${darkMode ? 'dark-mode' : ''}`}>
       <h2>
         Bari<span className="title">Koi</span>
       </h2>
