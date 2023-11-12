@@ -4,7 +4,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import MuiDrawer from '@mui/material/Drawer';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import Container from '@mui/material/Container';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
@@ -30,7 +29,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
         }),
         width: theme.spacing(5),
         [theme.breakpoints.up('sm')]: {
-          width: theme.spacing(5),
+          width: theme.spacing(9),
         },
       }),
     },
@@ -68,14 +67,15 @@ export default function Home() {
             px: [1],
           }}
         >
-          <IconButton onClick={toggleDrawer}>
-            <ChevronLeftIcon />
-          </IconButton>
           <IconButton onClick={toggleDarkMode}>
             {darkMode ? <WbSunny/> : <DarkMode/>}
           </IconButton>
+          <IconButton onClick={toggleDrawer}>
+            <ChevronLeftIcon />
+          </IconButton>
         </Toolbar>
-        <Divider />
+
+        
         <Search extractLocation={getLocation} darkMode={darkMode} />
       </Drawer>
 
